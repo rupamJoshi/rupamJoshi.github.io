@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>Rupam Joshi</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+
+  <style>
+    body {
+      font-size: 13px;
+    }
+  </style>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+          <li><a href="./index.html" title="">01 : General</a></li>
+          <li><a href="./programming.html" title="">02 : Programming</a></li>
+          <li><a href="./art.html" title="">03 : Art</a></li>
+        </ul>
+
+
+          <div class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <!-- <li><a href="./index.html" title="" class="active">001</a></li>
+            <li><a href="./index.html" title="">002</a></li>
+            <li><a href="./index.html" title="">003</a></li>
+            <li><a href="./index.html" title="">004</a></li>
+            <li><a href="./index.html" title="">005</a></li>
+            <li><a href="./index.html" title="">006</a></li> -->
+            </div>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+
+  
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="./assets/images/work001-01.jpg" class="img-responsive" alt="">
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">OSI Model from a Developer's point of view</h1>
+          </div>
+  <h1>🧠 Difference Between Program and Process</h1>
+  <p>
+    A <strong>program</strong> is a static set of instructions written in a programming language such as C, C++, or Go. It is stored in a file—often a binary with an <code>.exe</code> extension on Windows—and is the output of a compilation process. Examples of programs include Notepad, VSCode, or a custom-built application. The source code of a program represents the logic and behavior a programmer wants the operating system to execute when the program is run.
+  </p>
+
+  <p>
+    In contrast, a <strong>process</strong> is a program in execution.
+  </p>
+
+  <blockquote>
+    A process is an instance of a program that is being executed by the operating system.
+  </blockquote>
+
+  <p>
+    This definition is technically correct but oversimplified. It doesn't fully reflect the complexities involved when a program transitions to a running process.
+  </p>
+
+  <h2 class="emoji">🔍 What Happens When a Program Becomes a Process</h2>
+  <p>
+    When you execute a program, the operating system loads it into memory and creates a process. This process is more than just the code—it consists of several memory segments collectively referred to as the process layout:
+  </p>
+  <ul>
+    <li><strong>TEXT segment</strong>: Contains the compiled program instructions (code). This is typically read-only.</li>
+    <li><strong>DATA segment</strong>: Contains global and static variables initialized by the program.</li>
+    <li><strong>HEAP</strong>: Used for dynamic memory allocation during runtime. Its size can grow or shrink as needed.</li>
+    <li><strong>STACK</strong>: Stores local variables, function parameters, return addresses, and handles function call management. Like the heap, it can also grow and shrink dynamically.</li>
+  </ul>
+
+  <p>
+    The OS reads instructions from the TEXT segment and begins executing them—loading variables into CPU registers, performing computations, making system calls, and updating memory. Any runtime-created data (like objects, buffers, etc.) gets stored in the HEAP or STACK depending on how it's allocated.
+  </p>
+
+  <h2 class="emoji">🌀 Multiple Executions of the Same Program</h2>
+  <p>
+    When the same program is run multiple times (e.g., opening two instances of Notepad), the OS creates separate processes for each execution. Each process has:
+  </p>
+  <ul>
+    <li>Its own memory layout (separate STACK and HEAP)</li>
+    <li>Independent runtime state (registers, program counter, etc.)</li>
+    <li>Separate process ID (PID)</li>
+  </ul>
+  <p>
+    This allows the same program to run concurrently in isolation, without interference between instances.
+  </p>
+
+  <h2 class="emoji">🚀 Final Notes</h2>
+  <p>
+    What’s described here is just the tip of the iceberg. Processes involve complex scheduling, inter-process communication (IPC), synchronization, privilege separation, and more. Running processes reliably and concurrently is one of the most important and intricate responsibilities of an operating system.
+  </p>
+
+      
+      
+      <!-- <div class="col-md-8 col-md-offset-2 section-container-spacer">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <img src="./assets/images/work001-02.jpg" class="img-responsive" alt="">
+            <p>Menphis skyline</p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img src="./assets/images/work001-03.jpg" class="img-responsive" alt="">
+            <p>Menphis skyline</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <img src="./assets/images/work001-04.jpg" class="img-responsive" alt="">
+      </div>
+
+    </div>
+  </div>
+</div> -->
+
+
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© UNTITLED | Website created by Rupam Joshi</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     navActivePage();
+  });
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+--> <script type="text/javascript" src="./main.70a66962.js"></script></body>
+
+</html>
